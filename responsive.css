@@ -1,0 +1,24 @@
+@media only screen and (min-width: 640px) {
+    .grass {
+        background-image: url(http://pngimg.com/uploads/grass/grass_PNG10856.png);
+        background-size: contain;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 639px) {
+    .logo {
+        font-size: 16px;
+        padding: 15px;
+        margin-bottom: 2px;
+    }
+    
+    .quizTitle {
+        font-size: 22px;
+    }
+    
+    .quizDescription {
+        font-size: 16px;
+    }
+}

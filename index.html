@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is a quiz app!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR START-->
+    <header>
+        <nav class="navbar" role="navigation">
+            <ul class="logo">
+                <li><a href="index.html">think<strong>Fundamentals</strong></a></li>
+                <li class="score-board">
+                    <span class="total-score-result">0</span>
+                    <span class="total-score-questions"> / 10 questions right</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Main start menu -->
+    <main role="main" id="start-menu">
+        <div class="row">
+            <div class="col-12 home-icons">
+                <ul>
+                    <li class="icon">
+                        <img class="code-icon" src="https://s3.amazonaws.com/upload.uxpin/files/693662/685488/image-d6d9f7.png" alt="HTML 5 Icon" />
+                    </li>
+                    <li class="icon">
+                        <img class="code-icon" src="https://s3.amazonaws.com/upload.uxpin/files/693662/685488/image-43ec58.png" alt="CSS 3 Icon" />
+                    </li>
+                    <li class="icon">
+                        <img class="code-icon" src="https://uc.uxpin.com/files/693662/685488/image-e7f9ef.png" alt="Javascript Icon" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--landing page html-->
+        <div class="row">
+            <div class="col-12">
+                <h1 class="quizTitle">Front-End Fundamentals Quiz</h1>
+                <p class="quizDescription">This short quiz will test you on html, css, and javascript fundamentals to make sure you're ready to advance in the course!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 quiz-btn-container">
+                <button type="submit" role="button" class="start-quiz-btn">Start Quiz</button>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- SCORE TABLE -->
+
+    <div class="summary-page">
+        <!--Container to return the summary-page-->
+    </div>
+
+    <!--QUESTIONS PAGE-->
+    <div class="question-page">
+
+        <section id="scoreboard" role="region">
+            <div class="row scores">
+                <div class="col-4">
+                    <div class="row">
+                        <div class="html-score-container">
+                            <div class="col-6">
+                                <img src="https://s3.amazonaws.com/upload.uxpin/files/693662/685488/image-d6d9f7.png" alt="HTML 5 Icon" class="score-icon" />
+                            </div>
+                            <div class="col-6 score-count" id="html-score">
+                                0<div class="score-total-points">out of 30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="css-score-container">
+                            <div class="col-6">
+                                <img src="https://s3.amazonaws.com/upload.uxpin/files/693662/685488/image-43ec58.png" alt="CSS 3 Icon" class="score-icon" />
+                            </div>
+                            <div class="col-6 score-count" id="css-score">
+                                0<div class="score-total-points">out of 30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="js-score-container">
+                            <div class="col-6">
+                                <img src="https://uc.uxpin.com/files/693662/685488/image-e7f9ef.png" alt="Javascript Icon" class="score-icon" />
+                            </div>
+                            <div class="col-6 score-count" id="js-score">
+                                0 <div class="score-total-points">out of 30</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="question-final">
+            <section id="progress-bar">
+                <div class="progress-container">
+                    <progress value="10" max="100" class="progressBar"></progress>
+                </div>
+            </section> <!--END OF SCORES-->
+
+            <!-- QUESTION CONTAINER -->
+
+            <div class="question-container"></div>
+
+        </div>
+    </div>
+    <!--FOOTER -->
+    <footer class="quizFooter" role="contentinfo">
+        <div class="grass"></div>
+        <div class="footer-content"></div>
+    </footer>
+
+
+
+    <!-- Script Links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="questions.js"></script>
+    <script type="text/javascript" src="RESULTS.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>
